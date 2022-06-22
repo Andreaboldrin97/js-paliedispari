@@ -26,7 +26,7 @@ function(){
 
 
 
-
-function getRandomArbitrary(min, max) {
+//? creo la funzione per generare un numero random
+function getNumberRandom(min, max) {
     return Math.random() * (max - min) + min;
   }
