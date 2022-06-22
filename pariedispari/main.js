@@ -34,10 +34,10 @@ function(){
     console.log(sum)
 
     //?creo un if per vedere se la somma del numero è pari o dispari
-    if((sum % 2 === 0) && (userChoice.value === 'Pari')){
-        console.log(`bravo hai fatto bene ha scegliere Pari`);
-        }else if((sum % 2 === 1) && (userChoice.value === 'Dispari')){
-        console.log(`bravo hai fatto bene ha scegliere Dispari`);
+    if((sum % 2 === 0) && (userChoice === 'Pari')){
+        console.log(`bravo hai fatto bene ha scegliere Pari , congratulazione hai vinto`);
+        }else if((sum % 2 === 1) && (userChoice === 'Dispari')){
+        console.log(`bravo hai fatto bene ha scegliere Dispari, congratulazione hai vinto`);
         }else{
             console.log(`hey amico mi dispiace ma ho vinto io`)
         }
