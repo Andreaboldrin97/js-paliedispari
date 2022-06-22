@@ -14,6 +14,8 @@
 
 //creo una var per il btn invia form
 let btnSend = document.getElementById('send_form');
+//*dichiaro la variabile somma vuota per poterla richiamare 
+let sum ;
 
 //?creo levento al click sul btn
 btnSend.addEventListener(`click`, 
@@ -32,6 +34,10 @@ function(){
     console.log(sum)
 })
 
+//?creo un if per vedere se la somma del numero è pari o dispari
+if(sum % 2 === 0) && (userChoise.value === value='pari'){
+
+}
 
 //!invoco la funzione con i numeri da 1 a 5
 //! e la associo a una variabile
