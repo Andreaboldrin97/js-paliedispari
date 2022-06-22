@@ -14,8 +14,12 @@
 
 //creo una var per il btn invia form
 let btnSend = document.getElementById('send_form');
+
 //*dichiaro la variabile somma vuota per poterla richiamare 
 let sum ;
+
+//!recupero il contenitore dell'html e lo associo a la variabile
+let containerForm = document.getElementById('container_form')
 
 //?creo levento al click sul btn
 btnSend.addEventListener(`click`, 
@@ -31,21 +35,34 @@ function(){
     //*creo la variabile per l'somma
     //*visto che il valore di userChoiseN è una stringa la converto in un number per fare la somma
     let sum =parseInt(userChoiceN)  + pcNumber ;
-    console.log(sum)
+    console.log(sum);
+
+    //!creo l'elemento div e lo associo alla variabile divResult
+    let divResult= document.createElement('div')
 
     //?creo un if per vedere se la somma del numero è pari o dispari
     if((sum % 2 === 0) && (userChoice === 'Pari')){
-        console.log(`bravo hai fatto bene ha scegliere Pari , congratulazione hai vinto`);
-        }else if((sum % 2 === 1) && (userChoice === 'Dispari')){
-        console.log(`bravo hai fatto bene ha scegliere Dispari, congratulazione hai vinto`);
-        }else{
-            console.log(`hey amico mi dispiace ma ho vinto io`)
-        }
 
+        //!il valore di divResult all'interno dell'dom è
+        divResult.innerHTML = (`bravo hai fatto bene ha scegliere Pari , congratulazione hai vinto`)
+
+        }else if((sum % 2 === 1) && (userChoice === 'Dispari')){
+
+        //!il valore di divResult all'interno dell'dom è
+        divResult.innerHTML = (`bravo hai fatto bene ha scegliere Pari , congratulazione hai vinto`)
+
+        }else{
+
+            //!il valore di divResult all'interno dell'dom è
+            divResult.innerHTML = (`hey amico mi dispiace ma ho vinto io`);
+        }
+    
+        //!porto l'elemento html
+        containerForm.append(divResult);
 })
 
   
-   
+   ///FUNZIONE///
 
 //!invoco la funzione con i numeri da 1 a 5
 //! e la associo a una variabile
