@@ -19,7 +19,9 @@ let btnSend = document.getElementById('send_form');
 let sum ;
 
 //!recupero il contenitore dell'html e lo associo a la variabile
-let containerForm = document.getElementById('container_form')
+let containerForm = document.getElementById('container_form');
+//!recupero il contenitore dell'html e lo associo a la variabile
+let btnReplay = document.getElementById('btn_replay');
 
 //?creo levento al click sul btn
 btnSend.addEventListener(`click`, 
@@ -39,9 +41,19 @@ function(){
 
     //!creo l'elemento div e lo associo alla variabile divResult
     let divResult= document.createElement('div');
+    //!creo l'elemento div e lo associo alla variabile divResult
+    let aReplay= document.createElement('a');
+  
 
     //! do alcune classi al div creato
     divResult.classList.add('col-12' , 'text-center', 'mt-5')
+    //! do alcune classi al div creato
+    aReplay.classList.add('btn', 'btn-success')
+
+    aReplay.setAttribute('href', '../pariedispari/index.html')
+
+    aReplay.innerHTML= ('gioca di nuova')
+
     //?creo un if per vedere se la somma del numero è pari o dispari
     if((sum % 2 === 0) && (userChoice === 'Pari')){
 
@@ -62,6 +74,7 @@ function(){
         
         //!porto l'elemento html
         containerForm.append(divResult);
+        btnReplay.append(aReplay);
 })
 
   
