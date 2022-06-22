@@ -38,8 +38,10 @@ function(){
     console.log(sum);
 
     //!creo l'elemento div e lo associo alla variabile divResult
-    let divResult= document.createElement('div')
+    let divResult= document.createElement('div');
 
+    //! do alcune classi al div creato
+    divResult.classList.add('col-12' , 'text-center', 'mt-5')
     //?creo un if per vedere se la somma del numero è pari o dispari
     if((sum % 2 === 0) && (userChoice === 'Pari')){
 
@@ -56,7 +58,8 @@ function(){
             //!il valore di divResult all'interno dell'dom è
             divResult.innerHTML = (`hey amico mi dispiace ma ho vinto io`);
         }
-    
+
+        
         //!porto l'elemento html
         containerForm.append(divResult);
 })
