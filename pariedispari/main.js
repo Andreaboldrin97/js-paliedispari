@@ -58,17 +58,17 @@ function(){
     if((sum % 2 === 0) && (userChoice === 'Pari')){
 
         //!il valore di divResult all'interno dell'dom è
-        divResult.innerHTML = (`bravo hai fatto bene a scegliere Pari , congratulazione hai vinto`)
+        divResult.innerHTML = (`bravo hai fatto bene a scegliere Pari , congratulazione hai vinto <br> il mio numero era ${pcNumber}`)
 
         }else if((sum % 2 === 1) && (userChoice === 'Dispari')){
 
         //!il valore di divResult all'interno dell'dom è
-        divResult.innerHTML = (`bravo hai fatto bene a scegliere Pari , congratulazione hai vinto`)
+        divResult.innerHTML = (`bravo hai fatto bene a scegliere Dispari , congratulazione hai vinto <br> il mio numero era ${pcNumber}`)
 
         }else{
 
             //!il valore di divResult all'interno dell'dom è
-            divResult.innerHTML = (`hey amico mi dispiace ma ho vinto io`);
+            divResult.innerHTML = (`hey amico mi dispiace ma ho vinto io <br> il mio numero era ${pcNumber}`);
         }
 
         
