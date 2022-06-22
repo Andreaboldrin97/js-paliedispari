@@ -1,6 +1,8 @@
 // Pari e Dispari
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+//!apro un form in html
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+//!creo la funzione getNumberRandom
 // Sommiamo i due numeri
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
@@ -24,9 +26,12 @@ function(){
     console.log(userChoise);
 })
 
-
+//!invoco la funzione con i numeri da 1 a 5
+//! e la associo a una variabile
+let pcNumber = getNRandom(1,5);
+console.log(pcNumber)
 
 //? creo la funzione per generare un numero random
-function getNumberRandom(min, max) {
-    return Math.random() * (max - min) + min;
+function getNRandom(min, max) {
+    return Math.floor(Math.random() * (max - min) + min)
   }
