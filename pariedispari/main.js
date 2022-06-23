@@ -82,7 +82,8 @@ function(){
 
 //!invoco la funzione con i numeri da 1 a 5
 //! e la associo a una variabile
-let pcNumber = getNRandom(1,5);
+// tra uno e 6 perchè l'ultimo numero non è compreso 
+let pcNumber = getNRandom(1,6);
 console.log(pcNumber);
 
 //? creo la funzione per generare un numero random
