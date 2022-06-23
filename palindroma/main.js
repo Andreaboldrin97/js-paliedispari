@@ -18,6 +18,7 @@ if(userWord === invertWord(userWord)){
 
 //?creo una funzione per capire se la parola data dal'user è palindroma
 //?creo un ciclo while che scorre la parola partendo dalla fine
+//tratto la stringa come un array quindi la giro partendo dalla lunghezza -1 , fino a >= 0 
 
 
 function invertWord(stringa){
